@@ -36,12 +36,14 @@ body {
 a {
   text-decoration: none;
 }
+
 .section {
   position: relative;
 
   display: block;
 
   width: 100%;
+  margin: 0;
 }
 
 .main__width {
@@ -59,6 +61,10 @@ a {
 
 .theme__background {
   background-color: #23ba9c;
+}
+
+.theme__underline {
+  border-bottom: 7px solid #23ba9c;
 }
 
 a[class*="button"] {
@@ -246,4 +252,81 @@ ustawiając "float: left", gdy ustawiłem w ".slideshow__txt__box__heading > spa
 .slideshow__txt__box__button:hover {
   color: #23ba9c;
   background-color: #ffffff;
+}
+
+
+
+/*_SECTION2_PRODUCT_*/
+
+.product {
+  height: 350px;
+
+  border: 1px dotted red;
+  background-color: #ffffff;
+}
+
+.product__box {
+  position: relative;
+
+  display: inline-block;
+  float: left;
+
+  width: 330px;
+  height: 226px;
+  margin: 30px 0 84px;
+
+  border: 2px solid #c2c2c2;
+}
+
+.product__box:first-child {
+  background-image: url("../images/box1_img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.product__box:nth-child(2) {
+  margin: 30px 55px 84px;
+
+  background-image: url("../images/box2_img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.product__box:last-child {
+  height: 270px;
+  margin: 30px 0 40px 0;
+}
+
+/*NOTE Między górną krawędzią kontenera ".product > .main__width > .product__box"
+a marginesem "product__box" (wysokość kontenera - 350 px,
+wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
+
+.header__box{
+  display: block;
+
+  width: 100%;
+  height: 60px;
+  margin-top: 150px;
+
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.product__box .theme__underline {
+  width: 170px;
+  margin: 15px 0 0 20px;
+}
+
+.product__box .theme__underline .header {
+  font-family: 'ralewaybold';
+  font-size: 18px;
+}
+
+.product__box .theme__underline .header span {
+  text-transform: uppercase;
+}
+
+.product__box p {
+  padding: 15px 20px 0 20px;
+
+  font-size: 14px;
 }
