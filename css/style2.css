@@ -1,4 +1,4 @@
-/*__Global__*/
+/*__Global__==================================================================*/
 @font-face {
     font-family: 'ralewaybold';
     font-weight: normal;
@@ -63,6 +63,10 @@ a {
   background-color: #23ba9c;
 }
 
+.theme__border: {
+  border-color: #23ba9c;
+}
+
 .theme__underline {
   border-bottom: 7px solid #23ba9c;
 }
@@ -72,19 +76,18 @@ a[class*="button"] {
 }
 
 
-/*__HEADER__*/
+/*__HEADER__==================================================================*/
 
 header {
   display: block;
 
   height: 40px;
-
+  text-align: center;
   text-transform: uppercase;
 
   background-color: #000000;
 
   font-family: 'ralewaybold';
-
 }
 
 .header__menu {
@@ -110,11 +113,9 @@ header {
 .header__button__logo, .header__button {
   display: block;
 
-  text-align: center;
-
   color: #ffffff;
-  /*NOTE "Anhor" domyślnie nie dziedziczy koloru fontu
-  jeżeli posiada atybut "href"*/
+  /*NOTE Anhor domyślnie nie dziedziczy koloru fontu
+  jeżeli posiada atybut heref*/
 }
 
 /*XXX_aktywny_przycisk_menu_*/
@@ -128,7 +129,7 @@ header {
 
 
 
-/*_SECTION1_SLIDESHOW_*/
+/*__SECTION1_SLIDESHOW__======================================================*/
 
 .slideshow {
   height: 500px;
@@ -160,13 +161,15 @@ div[class^="slideshow__arrow"] {
   line-height: 53px;
   }
 
-div[class^="slideshow__arrow"] > span:hover {
+/*FIXME Popraw strzalki*/
+
+.arrow__sign:hover {
   color: #ffffff;
 }
 
-  .slideshow__arrow__right {
-    float: right;
-  }
+.slideshow__arrow__right {
+  float: right;
+}
 
 /*NOTE używając selektora "slideshow__arrow:nth-of-type(2)"
 nie mogłem wybrać drugiej "slideshow__arrow".
@@ -256,7 +259,7 @@ ustawiając "float: left", gdy ustawiłem w ".slideshow__txt__box__heading > spa
 
 
 
-/*_SECTION2_PRODUCT_*/
+/*__SECTION2_PRODUCT__========================================================*/
 
 .product {
   height: 350px;
@@ -301,12 +304,14 @@ ustawiając "float: left", gdy ustawiłem w ".slideshow__txt__box__heading > spa
 a marginesem "product__box" (wysokość kontenera - 350 px,
 wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
 
-.header__box{
+.product__box .header__box{
   display: block;
 
   width: 100%;
   height: 60px;
   margin-top: 150px;
+
+  text-align: left;
 
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -329,4 +334,222 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
   padding: 15px 20px 0 20px;
 
   font-size: 14px;
+}
+
+
+
+/*__SECTION3_PRICE__==========================================================*/
+
+.price {
+  height: 760px;
+
+  border: 1px dotted red;
+  background-color: #f0f0f0;
+}
+
+.price__header__box {
+  position: relative;
+
+  display: block;
+  float: left;
+
+  margin: 50px 100% 40px 0;
+}
+
+.price__header__box.theme__underline {
+  width: 300px;
+}
+
+.price__header {
+  text-transform: uppercase;
+
+  color: #000000;
+  /*font-family: 'ralewaybold';*/
+
+  font-size: 32px;
+}
+
+.plan__box {
+  position: relative;
+
+  display: inline-block;
+  float: left;
+
+  width: 330px;
+  height: 520px;
+  margin: 35px 0 60px;
+
+  border: 2px solid #c2c2c2;
+  background-color: #f7f7f7;
+}
+
+.plan__box.highlite {
+  background-color: #23ba9c;
+  border: 2px solid #23ba9c;
+  margin: 35px 55px 0;
+}
+
+.circle__box {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  left: 0;
+
+  height: 60px;
+}
+
+.circle__external {
+  position: relative;
+
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+
+  border: 2px solid #c2c2c2;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.circle__external.highlite {
+  background-color: #23ba9c;
+  border: 2px solid #23ba9c;
+}
+
+.circle__internal {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+
+  border-radius: 50%;
+  background-color: #c2c2c2;
+}
+
+.circle__internal.highlite {
+  background-color: #ffffff;
+}
+
+.plan__header {
+  margin: 40px 0 17px 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 28px;
+}
+
+.plan__header.highlite {
+  color: #ffffff;
+}
+
+.price__tag {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #c2c2c2;
+  border: 2px solid #c2c2c2;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  font-family: 'ralewaybold';
+}
+
+.price__tag.highlite {
+  border: 2px solid #23ba9c;
+  color: #23ba9c;
+}
+
+.value__box {
+  border: 1px solid red;
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  height: 80px;
+  margin: 30px 0 20px;
+}
+
+.value__whole {
+  font-size: 42px;  line-height: 100%;}
+
+.value__superscript {
+  vertical-align: super;
+
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.value__currency {
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.plan__services {
+  margin: 30px 0;
+
+  text-align: center;
+  vertical-align: middle;
+
+  color: #737373;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+.plan__services.highlite {
+  border: 0;
+}
+
+.plan__asset {
+  display: block;
+
+  padding: 5px 0;
+
+  font-size: 22px;
+}
+
+.plan__asset.highlite {
+  padding: 7px 0;
+}
+
+.plan__asset:nth-child(odd) {
+  background-color: #e3e3e3;
+}
+
+.plan__asset.highlite:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+
+.plan__asset:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.plan__button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 130px;
+  margin: 20px 100px;
+  padding: 10px 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.plan__button.highlite {
+  color: #23ba9c;
+  background-color: #ffffff;
 }

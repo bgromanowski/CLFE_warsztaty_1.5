@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="css/style2.css">
   </head>
   <body>
-    <!--___HEADER___-->
+    <!--___HEADER___=========================================================-->
     <header class="section">
       <div class="main__width">
         <nav>
@@ -17,7 +17,7 @@
                 Sit <spam class="theme__txt">on</spam> chair
               </a>
             </li>
-            <!--CHANGED zmiana koloru fontu przycisku
+            <!--XXX zmiana koloru fontu przycisku
             aktywnego przez dodanie klasy "active"-->
             <li> <a class="header__button" href="#">Kontakt</a> </li>
             <li> <a class="header__button" href="#">Galeria</a> </li>
@@ -27,14 +27,14 @@
       </div>
     </header>
 
-    <!--___SECTION1_SLIDESHOW___-->
+    <!--___SECTION1_SLIDESHOW___=============================================-->
     <!--NOTE Dlaczego tyle Divów w tej sekcji?
     Pomyślałem, że jeżeli ta sekcja ma taką formę dobrze jest stworzyć "slajdy" -
     "slideshow__box" niż odwoływać się potem do elementów kolejno.-->
     <section class="section slideshow">
       <div class="main__width">
-        <div class="slideshow__arrow__left"><span class="theme__txt"><</span></div>
-        <div class="slideshow___box">
+        <div class="slideshow__arrow__left"><span class="arrow__sign theme__txt"><</span></div>
+        <div class="slideshow__box">
           <img class="slideshow__graphic" src="images/black_chair_crop.png"/>
           <div class="slideshow__txt__box">
             <h1 class="slideshow__txt__box__heading">Sit <span class="theme__txt">on</span> our <span class="theme__txt">chair</span></h2>
@@ -47,11 +47,11 @@
             <a class="slideshow__txt__box__button button theme__background" href="#">Zobacz więcej</a>
           </div>
         </div>
-        <div class="slideshow__arrow__right"><span class="theme__txt">></span></div>
+        <div class="slideshow__arrow__right"><span class="arrow__sign theme__txt">></span></div>
       </div>
     </section>
 
-    <!--__SECTION2_PRODUCTS__-->
+    <!--__SECTION2_PRODUCTS__================================================-->
     <section class="section product">
       <div class="main__width">
         <div class="product__box">
@@ -85,7 +85,87 @@
       </div>
     </section>
 
+    <!--SECTION3_PRICE=======================================================-->
+    <section class="section price">
+      <div class="main__width">
+        <div class="price__header__box theme__underline">
+          <h1 class="price__header">Cennik</h1>
+        </div>
 
+        <div class="plan__box">
+          <div class="circle__box">
+            <div class="circle__external">
+              <div class="circle__internal"></div>
+            </div>
+          </div>
+          <h1 class="plan__header theme__txt">Basic plan</h1>
+          <div class="price__tag">
+            <p class="value__box">
+              <span class="value__whole">
+                <span class="value">85</span>
+                <span class="value__superscript">99</span>
+              </span>
+              <span class="value__currency">pln/msc</span>
+            </p>
+          </div>
+          <ul class="plan__services">
+            <li class="plan__asset">Zakup towaru + dowóz</li>
+            <li class="plan__asset">Serwis</li>
+          </ul>
+          <a class="plan__button theme__background" href="#">Dołącz</a>
+        </div>
+
+        <div class="plan__box highlite">
+          <div class="circle__box">
+            <div class="circle__external highlite">
+              <div class="circle__internal highlite"></div>
+            </div>
+          </div>
+          <h1 class="plan__header highlite">Standard plan</h1>
+          <div class="price__tag highlite">
+            <p class="value__box">
+              <span class="value__whole">
+                <span class="value">95</span>
+                <span class="value__superscript">99</span>
+              </span>
+              <span class="value__currency">pln/msc</span>
+            </p>
+          </div>
+          <ul class="plan__services highlite">
+            <li class="plan__asset highlite">Zakup towaru + dowóz</li>
+            <li class="plan__asset highlite">Serwis</li>
+            <li class="plan__asset highlite">Gwarancja na 5 lat</li>
+          </ul>
+          <a class="plan__button highlite" href="#">Dołącz</a>
+        </div>
+
+        <div class="plan__box">
+          <div class="circle__box">
+            <div class="circle__external">
+              <div class="circle__internal"></div>
+            </div>
+          </div>
+          <h1 class="plan__header theme__txt">Advance plan</h1>
+          <div class="price__tag">
+            <p class="value__box">
+              <span class="value__whole">
+                <span class="value">210</span>
+                <span class="value__superscript">00</span>
+              </span>
+              <span class="value__currency">pln/msc</span>
+            </p>
+          </div>
+          <ul class="plan__services">
+            <li class="plan__asset">Zakup towaru + dowóz</li>
+            <li class="plan__asset">Serwis</li>
+            <li class="plan__asset">Gwarancja na 6 lat</li>
+            <li class="plan__asset">Porady projektanta</li>
+          </ul>
+          <a class="plan__button theme__background" href="#">Dołącz</a>
+        </div>
+
+      </div>
+    </section>
 
   </body>
 </html>
