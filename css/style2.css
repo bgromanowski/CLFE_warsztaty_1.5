@@ -1,0 +1,249 @@
+/*__Global__*/
+@font-face {
+    font-family: 'ralewaybold';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/raleway-bold-webfont.eot');
+    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+}
+
+body {
+  color: #000000;
+
+  font-family: 'ralewayregular', Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+.section {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+}
+
+.main__width {
+  position: relative;
+  /*display: block;*/
+  /*XXX Zastanowić się nad "block"*/
+
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.theme__txt{
+  color: #23ba9c;
+}
+
+.theme__background {
+  background-color: #23ba9c;
+}
+
+a[class*="button"] {
+  line-height: 100%;
+}
+
+
+/*__HEADER__*/
+
+header {
+  display: block;
+
+  height: 40px;
+
+  text-transform: uppercase;
+
+  background-color: #000000;
+
+  font-family: 'ralewaybold';
+
+}
+
+.header__menu {
+  list-style-type: none;
+}
+
+.header__menu > li {
+  float: right;
+}
+
+.header__menu > li:first-child {
+  float: left;
+}
+
+.header__button__logo {
+  padding: 12px 60px 12px 0;
+}
+
+.header__button {
+  padding: 12px 0 12px 60px;
+}
+
+.header__button__logo, .header__button {
+  display: block;
+
+  text-align: center;
+
+  color: #ffffff;
+  /*NOTE "Anhor" domyślnie nie dziedziczy koloru fontu
+  jeżeli posiada atybut "href"*/
+}
+
+/*XXX_aktywny_przycisk_menu_*/
+.active {
+  color: #23ba9c;
+}
+
+.header__button:hover {
+  color: #23ba9c;
+}
+
+
+
+/*_SECTION1_SLIDESHOW_*/
+
+.slideshow {
+  height: 500px;
+
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 16%, rgba(240,240,240,1) 59%, rgba(230,230,230,1) 92%, rgba(230,230,230,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(16%, rgba(255,255,255,1)), color-stop(59%, rgba(240,240,240,1)), color-stop(92%, rgba(230,230,230,1)), color-stop(100%, rgba(230,230,230,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 16%, rgba(240,240,240,1) 59%, rgba(230,230,230,1) 92%, rgba(230,230,230,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 16%, rgba(240,240,240,1) 59%, rgba(230,230,230,1) 92%, rgba(230,230,230,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 16%, rgba(240,240,240,1) 59%, rgba(230,230,230,1) 92%, rgba(230,230,230,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 16%, rgba(240,240,240,1) 59%, rgba(230,230,230,1) 92%, rgba(230,230,230,1) 100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0 );
+}
+
+div[class^="slideshow__arrow"] {
+  position: relative;
+
+  display: inline-block;
+  float: left;
+
+  width: 60px;
+  height: 70px;
+  margin: 220px 0;
+
+  text-align: center;
+
+  font-size: 100px;
+  line-height: 53px;
+  }
+
+div[class^="slideshow__arrow"] > span:hover {
+  color: #ffffff;
+}
+
+  .slideshow__arrow__right {
+    float: right;
+  }
+
+/*NOTE używając selektora "slideshow__arrow:nth-of-type(2)"
+nie mogłem wybrać drugiej "slideshow__arrow".
+Używając "slideshow__arrow:nth-of-type(3)" udało mi się.
+Dlaczego?
+CHANGED Zmieniłem klasy na "slideshow__arrow__left" i na "slideshow__arrow__right"*/
+
+.slideshow__box {
+  position: relative;
+
+  display: inline-block;
+  float: left;
+
+  width: 980px;
+}
+
+.slideshow__graphic {
+  position: relative;
+
+  display: inline-block;
+  float: left;
+
+  width: 410px;
+  height: 367px;
+  margin-top: 105px;
+}
+
+.slideshow__txt__box {
+  position: relative;
+
+  display: inline-block;
+  float: left;
+
+  width: 570px;
+  height: 341px;
+  margin-top: 131px;
+
+  text-align: center;
+}
+
+.slideshow__txt__box__heading {
+  position: relative;
+
+  display: block;
+
+  margin: 0 0 30px 0;
+
+  text-transform: uppercase;
+
+  font-size: 42px;
+}
+
+.slideshow__txt__box__heading span {
+  font-family: 'ralewaybold';
+}
+
+/*NOTE Dlaczego gdy ustawiłem w ".slideshow > .main__width > * "
+ustawiając "float: left", gdy ustawiłem w ".slideshow__txt__box__heading > span"
+"float: none" elementy w "spanach" nadal wyświetlały się jako "float: left"*/
+
+.slideshow__txt__box__txt {
+  position: relative;
+
+  display: block;
+
+  margin: 30px 0 45px 0;
+  padding: 15px 35px;
+}
+
+.slideshow__txt__box__button {
+  position: relative;
+
+  padding: 10px 45px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border-radius: 10px;
+
+  font-size: 22px;
+}
+
+.slideshow__txt__box__button:hover {
+  color: #23ba9c;
+  background-color: #ffffff;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+  <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body>
+    <!--___HEADER___-->
+    <header class="section">
+      <div class="main__width">
+        <nav>
+          <ul class="header__menu">
+            <li>
+              <a class="header__button__logo" href="#">
+                Sit <spam class="theme__txt">on</spam> chair
+              </a>
+            </li>
+            <!--CHANGED zmiana koloru fontu przycisku
+            aktywnego przez dodanie klasy "active"-->
+            <li> <a class="header__button" href="#">Kontakt</a> </li>
+            <li> <a class="header__button" href="#">Galeria</a> </li>
+            <li> <a class="header__button" href="#">O firmie</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--___SECTION1_SLIDESHOW___-->
+    <!--NOTE Dlaczego tyle Divów w tej sekcji?
+    Pomyślałem, że jeżeli ta sekcja ma taką formę dobrze jest stworzyć "slajdy" -
+    "slideshow__box" niż odwoływać się potem do elementów kolejno.-->
+    <section class="section slideshow">
+      <div class="main__width">
+        <div class="slideshow__arrow__left"><span class="theme__txt"><</span></div>
+        <div class="slideshow___box">
+          <img class="slideshow__graphic" src="images/black_chair_crop.png"/>
+          <div class="slideshow__txt__box">
+            <h1 class="slideshow__txt__box__heading">Sit <span class="theme__txt">on</span> our <span class="theme__txt">chair</span></h2>
+            <p class="slideshow__txt__box__txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vivamus vestibulum libero mauris, sit amet porta felis scelerisque ut.
+              Maecenas congue ac justo et posuere.
+              Nunc placerat vehicula mi, ac scelerisque elit semper vel.
+            </p>
+            <a class="slideshow__txt__box__button button theme__background" href="#">Zobacz więcej</a>
+          </div>
+        </div>
+        <div class="slideshow__arrow__right"><span class="theme__txt">></span></div>
+      </div>
+    </section>
+
+
+  </body>
+</html>
