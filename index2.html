@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PL-pl">
+<html lang="pl">
   <head>
       <meta charset="UTF-8">
       <title></title>
@@ -14,7 +14,7 @@
           <ul class="header__menu">
             <li>
               <a class="header__button__logo" href="#">
-                Sit <spam class="theme__txt">on</spam> chair
+                Sit <spam class="theme__txt">On</spam> Chair
               </a>
             </li>
             <!--XXX zmiana koloru fontu przycisku
@@ -28,9 +28,6 @@
     </header>
 
     <!--___SECTION1_SLIDESHOW___=============================================-->
-    <!--NOTE Dlaczego tyle Divów w tej sekcji?
-    Pomyślałem, że jeżeli ta sekcja ma taką formę dobrze jest stworzyć "slajdy" -
-    "slideshow__box" niż odwoływać się potem do elementów kolejno.-->
     <section class="section slideshow">
       <div class="main__width">
         <div class="slideshow__arrow__left"><span class="arrow__sign theme__txt"><</span></div>
@@ -91,7 +88,6 @@
         <div class="price__header__box theme__underline">
           <h1 class="price__header">Cennik</h1>
         </div>
-
         <div class="plan__box">
           <div class="circle__box">
             <div class="circle__external">
@@ -114,7 +110,6 @@
           </ul>
           <a class="plan__button theme__background" href="#">Dołącz</a>
         </div>
-
         <div class="plan__box highlite">
           <div class="circle__box">
             <div class="circle__external highlite">
@@ -138,7 +133,6 @@
           </ul>
           <a class="plan__button highlite" href="#">Dołącz</a>
         </div>
-
         <div class="plan__box">
           <div class="circle__box">
             <div class="circle__external">
@@ -163,9 +157,67 @@
           </ul>
           <a class="plan__button theme__background" href="#">Dołącz</a>
         </div>
-
       </div>
     </section>
 
+<!--SECTION3_CONTACT=========================================================-->
+    <section class="section contact">
+      <div class="main__width">
+        <div class="contact__header__box theme__underline">
+          <h1 class="contact__header">Kontakt</h1>
+        </div>
+        <form class="contact__form">
+          <div class="contact__form__box__left">
+            <input class="contact__user__data" type="text" name="user__name" placeholder="Imię"/>
+            <br>
+            <input class="contact__user__data" type="text" name="user__email" placeholder="e-mail"/>
+            <br>
+            <textarea class="contact__user__data" type="text" name="user__message" placeholder="Wiadomość"></textarea>
+          </div>
+          <div class="contact__form__box__right">
+            <img class="form__graphic" src="./images/red_chair.png"/>
+            <div class="agreed">
+              <img class="agreed__graphic" src="./images/form_ok.jpg"/>
+              <p class="agreed__txt">Zgadzam się na przetwarzanie danych osobowych</p>
+            </div>
+            <input class="agreed__button theme__background" type="submit" value="Wyślij"/>
+          </div>
+        </form>
+      </div>
+    </section>
+
+<!--FOOTER===================================================================-->
+    <footer class="section">
+      <div class="main__width">
+        <ul class="footer__menu">
+          <li><h2 class="footer__copyright__header"></h2></li>
+          <li>
+            <ul class="footer__social">
+              <li>
+                <a class="footer__social__link" href="#">
+                <img class="footer__social__icon" src="./imagesflickr.png"/>
+              </li>
+              <li>
+                <a class="footer__social__link" href="#">
+                <img class="footer__social__icon" src="./images/flickr.png"/>
+              </li>
+              <li>
+                <a class="footer__social__link" href="#">
+                <img class="footer__social__icon" src="./images/vimeo.png"/>
+              </li>
+              <li>
+                <a class="footer__social__link" href="#">
+                <img class="footer__social__icon" src="./images/pinterest.png"/>
+              </li>
+              <li>
+                <a class="footer__social__link" href="#">
+                <img class="footer__social__icon" src="./images/twitter.png"/>
+              </li>
+            </ul>
+          </li>
+          <li><a class="footer__logo" href="#">Sit<spam>On</spam>Chair</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

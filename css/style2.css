@@ -51,7 +51,7 @@ a {
   /*display: block;*/
   /*XXX Zastanowić się nad "block"*/
 
-  width: 1100px;
+  width: 1050px;
   margin: 0 auto;
 }
 
@@ -64,7 +64,7 @@ a {
 }
 
 .theme__border: {
-  border-color: #23ba9c;
+  border-color: 1px solid #23ba9c;
 }
 
 .theme__underline {
@@ -118,10 +118,10 @@ header {
   jeżeli posiada atybut heref*/
 }
 
-/*XXX_aktywny_przycisk_menu_*/
+/*XXX aktywny przycisk menu
 .active {
   color: #23ba9c;
-}
+}*/
 
 .header__button:hover {
   color: #23ba9c;
@@ -183,7 +183,7 @@ CHANGED Zmieniłem klasy na "slideshow__arrow__left" i na "slideshow__arrow__rig
   display: inline-block;
   float: left;
 
-  width: 980px;
+  width: 930px;
 }
 
 .slideshow__graphic {
@@ -203,7 +203,7 @@ CHANGED Zmieniłem klasy na "slideshow__arrow__left" i na "slideshow__arrow__rig
   display: inline-block;
   float: left;
 
-  width: 570px;
+  width: 520px;
   height: 341px;
   margin-top: 131px;
 
@@ -236,13 +236,13 @@ ustawiając "float: left", gdy ustawiłem w ".slideshow__txt__box__heading > spa
   display: block;
 
   margin: 30px 0 45px 0;
-  padding: 15px 35px;
+  padding: 15px 10px;
 }
 
 .slideshow__txt__box__button {
   position: relative;
 
-  padding: 10px 45px;
+  padding: 10px 10px;
 
   text-transform: uppercase;
 
@@ -278,24 +278,24 @@ ustawiając "float: left", gdy ustawiłem w ".slideshow__txt__box__heading > spa
   height: 226px;
   margin: 30px 0 84px;
 
-  border: 2px solid #c2c2c2;
+  border: 1px solid #c2c2c2;
 }
 
-.product__box:first-child {
+.product__box:first-of-type {
   background-image: url("../images/box1_img.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-.product__box:nth-child(2) {
-  margin: 30px 55px 84px;
+.product__box:nth-of-type(2) {
+  margin: 30px 30px 84px;
 
   background-image: url("../images/box2_img.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-.product__box:last-child {
+.product__box:last-of-type {
   height: 270px;
   margin: 30px 0 40px 0;
 }
@@ -379,14 +379,14 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
   height: 520px;
   margin: 35px 0 60px;
 
-  border: 2px solid #c2c2c2;
+  border: 1px solid #c2c2c2;
   background-color: #f7f7f7;
 }
 
 .plan__box.highlite {
   background-color: #23ba9c;
-  border: 2px solid #23ba9c;
-  margin: 35px 55px 0;
+  border: 1px solid #23ba9c;
+  margin: 35px 30px 0;
 }
 
 .circle__box {
@@ -405,20 +405,20 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
   height: 60px;
   margin: 0 auto;
 
-  border: 2px solid #c2c2c2;
+  border: 1px solid #c2c2c2;
   border-radius: 50%;
   background-color: #ffffff;
 }
 
 .circle__external.highlite {
   background-color: #23ba9c;
-  border: 2px solid #23ba9c;
+  border: 1px solid #23ba9c;
 }
 
 .circle__internal {
   position: absolute;
-  top: 13px;
-  left: 13px;
+  top: 14px;
+  left: 14px;
 
   width: 30px;
   height: 30px;
@@ -519,16 +519,15 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
   padding: 7px 0;
 }
 
-.plan__asset:nth-child(odd) {
+.plan__asset:nth-of-type(odd) {
   background-color: #e3e3e3;
 }
 
-.plan__asset.highlite:nth-child(odd) {
+.plan__asset.highlite:nth-of-type(odd) {
   background-color: #ffffff;
 }
 
-
-.plan__asset:nth-child(even) {
+.plan__asset:nth-of-type(even) {
   background-color: #f0f0f0;
 }
 
@@ -552,4 +551,147 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
 .plan__button.highlite {
   color: #23ba9c;
   background-color: #ffffff;
+}
+
+
+
+/*__SECTION4_CONTACT__========================================================*/
+
+.contact {
+  height: 587px;
+
+  border: 1px dotted red;
+  background-color: #ffffff;
+}
+
+.contact__header__box {
+  position: relative;
+
+  display: block;
+  float: left;
+
+  margin: 50px 100% 40px 0;
+}
+
+.contact__header__box.theme__underline {
+  width: 300px;
+}
+
+.contact__header {
+  text-transform: uppercase;
+
+ color: #000000;
+
+ font-size: 32px;
+}
+
+.contact__form {
+  display: block;
+  position: relative;
+
+  width: 100%;
+}
+
+.contact__form__box__left {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 675px;
+  margin-bottom: 50px;
+  border: 1px dotted red;
+}
+
+.contact__form__box__right {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 375px;
+  border: 1px dotted red;
+  margin-bottom: 50px;
+}
+
+.contact__user__data {
+  width: 650px;
+  height: 70px;
+  border: 1px solid #a6e3d1;
+  color: #c2c2c2;
+  padding-left: 15px;
+  margin: 0 25px 0 0;
+  display: block;
+  position: relative;
+  float: left;
+  font-family: 'ralewayregular';
+  font-size: 32px;
+}
+
+.contact__user__data[name="user__email"] {
+  margin: 25px 0;
+  border: 2px solid red;
+}
+
+.contact__user__data[name="user__message"] {
+  height: 200px;
+  padding-top: 15px;
+}
+
+.form__graphic {
+  width: 264px;
+  height: 210px;
+  display: block;
+  position: relative;
+  margin: 0 auto 31px;
+}
+
+.agreed {
+  width: 100%;
+  height: 48px;
+  margin: 0 0 31px 0;
+  position: relative;
+  display: block;
+}
+
+.agreed__graphic {
+  height: 48px;
+  width: 48px;
+  padding: 4px 0;
+  border: 1px solid #a6e3d1;
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.agreed__txt {
+  font-size: 21px;
+
+  color: #c2c2c2;
+  padding: 0 15px;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 110%;
+}
+
+.agreed__button {
+  width: 375px;
+  height: 70px;
+  font-family:'ralewaybold';
+  font-size: 32px;
+  padding: 15px auto;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  color: #ffffff;
+  text-transform: uppercase;
+  outline: 0;
+  margin: 0 auto;
+  border: 0;
+}
+
+
+
+/*__FOOTER__==================================================================*/
+
+footer {
+  height: 120px;
+  background-color: #ffffff;
+  border: 1px dotted red;
 }
