@@ -2,7 +2,8 @@
 <html lang="pl">
   <head>
       <meta charset="UTF-8">
-      <title></title>
+      <!--FIXME kodowanie znakow-->
+      <title>Sit ON Chair</title>
       <link rel="stylesheet" href="css/reset.css">
       <link rel="stylesheet" href="css/style2.css">
   </head>
@@ -52,30 +53,30 @@
     <section class="section product">
       <div class="main__width">
         <div class="product__box">
-          <div class="header__box">
+          <div class="product__box__header__background">
             <div class="theme__underline">
-              <h2 class="header">Chair <span>Clair</span></h2>
+              <h2 class="product__box__header">Chair <span>Clair</span></h2>
             </div>
           </div>
         </div>
         <div class="product__box">
-          <div class="header__box">
+          <div class="product__box__header__background">
             <div class="theme__underline">
-              <h2 class="header">Chair <span>Margarita</span></h2>
+              <h2 class="product__box__header">Chair <span>Margarita</span></h2>
             </div>
           </div>
         </div>
         <div class="product__box">
           <div class="theme__underline">
-            <h2 class="header">Finds all imputs</h2>
+            <h2 class="product__box__header">Finds all imputs</h2>
           </div>
-          <p>
+          <p class="product__box__txt">
             Finds all imputs that are not checked and
             highlights the next sibling span. Notice there
             is no change when clicking the checkboxes
             since no click events have been linked.
           </p>
-          <p>
+          <p class="product__box__txt">
             Notice there is no change when clicking the
             checkboxes since no click events have been.
           </p>
@@ -143,7 +144,7 @@
           <div class="price__tag">
             <p class="value__box">
               <span class="value__whole">
-                <span class="value">210</span>
+                <span class="value">211</span>
                 <span class="value__superscript">00</span>
               </span>
               <span class="value__currency">pln/msc</span>
@@ -216,7 +217,8 @@
               </li>
             </ul>
           </li>
-          <!-- <li> <a class="footer__logo" href="#">Sit<span>On</span>Chair</a> </li> -->
+          <!-- <li> <a class="footer__logo" href="#">Sit<span>On</span>Chair</a> </li>
+          NOTE sprawdź priorytet zagniezdzonej listy. Czy ma priorytet wiekszy od "li"-->
         </ul>
       </div>
     </footer>

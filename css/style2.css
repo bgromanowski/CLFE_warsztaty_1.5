@@ -112,6 +112,7 @@ header {
 
 .header__button__logo, .header__button {
   display: block;
+  position: relative;
 
   color: #ffffff;
   /*NOTE Anhor domyślnie nie dziedziczy koloru fontu
@@ -262,7 +263,6 @@ ustawiając "float: left", gdy ustawiłem w ".slideshow__txt__box__heading > spa
 .product {
   height: 350px;
 
-  border: 1px dotted red;
   background-color: #ffffff;
 }
 
@@ -302,7 +302,7 @@ ustawiając "float: left", gdy ustawiłem w ".slideshow__txt__box__heading > spa
 a marginesem "product__box" (wysokość kontenera - 350 px,
 wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
 
-.product__box .header__box{
+.product__box__header__background {
   display: block;
 
   width: 100%;
@@ -319,16 +319,16 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
   margin: 15px 0 0 20px;
 }
 
-.product__box .theme__underline .header {
+.product__box__header {
   font-family: 'ralewaybold';
   font-size: 18px;
 }
 
-.product__box .theme__underline .header span {
+.product__box__header span {
   text-transform: uppercase;
 }
 
-.product__box p {
+.product__box__txt {
   padding: 15px 20px 0 20px;
 
   font-size: 14px;
@@ -341,7 +341,6 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
 .price {
   height: 760px;
 
-  border: 1px dotted red;
   background-color: #f0f0f0;
 }
 
@@ -465,7 +464,6 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
 }
 
 .value__box {
-  border: 1px solid red;
   position: relative;
 
   display: block;
@@ -558,7 +556,6 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
 .contact {
   height: 587px;
 
-  border: 1px dotted red;
   background-color: #ffffff;
 }
 
@@ -594,18 +591,16 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
   display: inline-block;
   position: relative;
   float: left;
-  width: 675px;
-  margin-bottom: 50px;
-  border: 1px dotted red;
+  width: 650px;
+  margin: 0 50px 50px 0;
 }
 
 .contact__form__box__right {
   display: inline-block;
   position: relative;
   float: left;
-  width: 375px;
-  border: 1px dotted red;
-  margin-bottom: 50px;
+  width: 350px;
+  margin: 0 0 50px 0;
 }
 
 .contact__user__data {
@@ -614,7 +609,7 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
   border: 1px solid #a6e3d1;
   color: #c2c2c2;
   padding-left: 15px;
-  margin: 0 25px 0 0;
+  margin: 0;
   display: block;
   position: relative;
   float: left;
@@ -624,7 +619,6 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
 
 .contact__user__data[name="user__email"] {
   margin: 25px 0;
-  border: 2px solid red;
 }
 
 .contact__user__data[name="user__message"] {
@@ -659,17 +653,17 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
 }
 
 .agreed__txt {
-  font-size: 21px;
+  font-size: 19px;
 
   color: #c2c2c2;
   padding: 0 15px;
   display: table-cell;
   vertical-align: middle;
-  line-height: 110%;
+  line-height: 135%;
 }
 
 .agreed__button {
-  width: 375px;
+  width: 350px;
   height: 70px;
   font-family:'ralewaybold';
   font-size: 32px;
@@ -691,7 +685,6 @@ wysokość "product__box" - 360px) brakuje 10px. Od czego się odpychają?*/
 footer {
   height: 120px;
   background-color: #ffffff;
-  border: 1px dotted red;
 }
 
 .footer__menu {
@@ -700,6 +693,7 @@ footer {
 
 .footer__menu li {
   display: block;
+  position: relative;
   float: right;
   padding: 0;
   margin: 41px 0 0 70px;
@@ -724,7 +718,7 @@ footer {
 }
 
 .footer__menu .footer__social__li {
-  margin-top: 25px;
+  margin-top: 27px;
 }
 
 .footer__social__list li {
