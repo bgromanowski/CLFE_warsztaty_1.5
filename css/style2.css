@@ -161,8 +161,6 @@ div[class^="slideshow__arrow"] {
   line-height: 53px;
   }
 
-/*FIXME Popraw strzalki*/
-
 .arrow__sign:hover {
   color: #ffffff;
 }
@@ -694,4 +692,47 @@ footer {
   height: 120px;
   background-color: #ffffff;
   border: 1px dotted red;
+}
+
+.footer__menu {
+  list-style-type: none;
+}
+
+.footer__menu li {
+  display: block;
+  float: right;
+  padding: 0;
+  margin: 41px 0 0 70px;
+}
+
+.footer__menu .footer__copyright__li{
+  float: left;
+  margin: 41px 0;
+}
+
+.footer__copyright__header {
+  color: #c2c2c2;
+}
+
+.footer__logo {
+  color: #c2c2c2;
+  text-transform: uppercase;
+}
+
+.footer__logo span {
+  font-family: 'ralewaybold';
+}
+
+.footer__menu .footer__social__li {
+  margin-top: 25px;
+}
+
+.footer__social__list li {
+  margin: 0 0 0 2px;
+}
+
+.footer__social__icon {
+  width: 35px;
+  height: 35px;
+  margin: 0;
 }
